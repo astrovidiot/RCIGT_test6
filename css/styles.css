@@ -191,11 +191,11 @@ BODY 	{
 			}
 	#BIO4 {
 			font-family: 'HelveticaNowDisplay Regular';
-			color: #182160;
-			font-size: 18px;
+			color: rgb(200, 200, 200);
+			font-size: 16px;
 			text-justify: inter-word;
-			word-spacing: 2px;
-			line-height: 23px;
+			word-spacing: 1px;
+			line-height: 22px;
 			}
 	#BIO5 {
 			font-family: 'HelveticaNowDisplay Regular';
