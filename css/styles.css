@@ -7,68 +7,41 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
-		font-family: 'Dosis';
-		src: url('../fonts/Dosis_VariableFont_wght.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-		}
-/*  I think this font was not used */
-@font-face {
-		font-family: 'OpenSansCond';
-		src: url('../fonts/OpenSans_Condensed_Regular.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-		}
-/* not sure if this was used  */
-@font-face {
-		font-family: 'arial';
-		src: url('..fonts/ARIALN.TTF') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-		}
-/* not sure if this was used  */
-@font-face {
-		font-family: 'arialbold';
-		src: url('..fonts/ARIALNB.TTF') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-		}
-@font-face {
-		font-family: 'arialbolditalic';
-		src: url('..fonts/ARIALBI.TTF') format('truetype');
-		font-weight: normal;
-	  font-style: normal;
-    }
+    font-family: 'dosismedium';
+    src: url('../fonts/dosis-medium-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'helveticanowdisplay_regularRg';
     src: url('../fonts/helveticanowdisplay-regular-webfont.woff2') format('woff2'),
          url('../fonts/helveticanowdisplay-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-		}
+}
+@font-face {
+    font-family: 'helveticanowdisplay_bold';
+    src: url('../fonts/helveticanowdisplay-bold-webfont.woff2') format('woff2'),
+         url('../fonts/helveticanowdisplay-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'franklin_gothic_demiitalic';
+    src: url('../fonts/fradmit-webfont.woff2') format('woff2'),
+         url('../fonts/fradmit-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
 
-/* used on home page bold text  */
-@font-face {
-		font-family: 'helveticabold';
-		src: url('../fonts/HelveticaNowDisplay-Bold.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-		}
-/* used on home page plain text  */
-@font-face {
-			font-family: 'helvetica';
-			src: url('../fonts/HelveticaNowDisplay-Regular.ttf') format('truetype');
-			font-weight: normal;
-			font-style: normal;
-			}
 
 	a 	{
 			color: inherit;
 			text-decoration: none;
 			}
-	.trademark {
+	.trademark {  /* trademark text font & style */
 			font-family: "bndrs", sans-serif;
 			color: #08508C;
 			font-size: 16.5px;
@@ -79,14 +52,14 @@
 			left: 400px;
 			}
 	.dosis-nav {   /* used by upper right banner nav  */
-			font-family: 'Dosis', sans-serif;
+			font-family: 'dosismedium', sans-serif;
 			font-size: 16px;
 			font-weight: 500;
 			font-style: normal;
 			color: #a0a0a0;
 			}
 	.helvetica-head {  /* main body bold heading text   */
-			font-family: 'helveticabold', sans-serif;
+			font-family: 'helveticanowdisplay_bold', sans-serif;
 			font-size: 25px;
 			font-weight: 700;
 			font-style: normal;
@@ -101,14 +74,14 @@
 			word-spacing: 3px;
 			}
 	.footer-heading {
-			font-family: 'Dosis', sans-serif;
+			font-family: 'dosismedium', sans-serif;
 			font-size: 25px;
 			font-weight: 700;
 			font-style: normal;
 			color: #b6d56d;
 			}
 	.footer-text {
-			font-family: 'Dosis', sans-serif;
+			font-family: 'dosismedium', sans-serif;
 			font-size: 18px;
 			font-weight: 500;
 			font-style: normal;
@@ -117,39 +90,57 @@
 
 /*  Product Page  */
 .formoreinfo {
-      font-family: 'arialbolditalic', sans-serif;
+      font-family: 'franklin_gothic_demiitalic', sans-serif;
       font-size: 45px;
-      font-weight: bold;
       font-style: italic;
+      font-weight: bold;
       color: #182160;
       text-align: center;
       }
 /*  Insights & Concepts & Contact Page */
 .helvetica-blue {  /* main body bold heading text   */
-			font-family: 'helveticabold', sans-serif;
+			font-family: 'helveticanowdisplay_bold', sans-serif;
 			font-size: 25px;
 			font-weight: 700;
 			font-style: normal;
+      word-spacing: 2px;
+			letter-spacing: 2px;
+      line-height: 35px;
 			color: #08508C;
 			}
 .helvetica-white {  /* main body bold heading text   */
-			font-family: 'helveticabold', sans-serif;
+			font-family: 'helveticanowdisplay_bold', sans-serif;
 			font-size: 21px;
 			font-weight: 600;
 			font-style: bold;
 			word-spacing: 1px;
 			letter-spacing: 1px;
+      line-height: 27px;
 			color: #FFFFFF;
 			}
 .helvetica-navy {  /* main body bold heading text   */
-			font-family: 'helveticabold', sans-serif;
-			font-size: 22px;
+			font-family: 'helveticanowdisplay_bold', sans-serif;
+			font-size: 21px;
 			font-weight: 600;
 			font-style: bold;
 			word-spacing: 1px;
 			letter-spacing: 1px;
+      line-height: 27px;
 			color: #182160;
 			}
+/* Contact Page */
+.contactus-helvetica-white {  /* main body bold heading text   */
+			font-family: 'helveticanowdisplay_bold', sans-serif;
+			font-size: 26px;
+			font-weight: 600;
+			font-style: bold;
+			word-spacing: 1px;
+			letter-spacing: 3px;
+      line-height: 27px;
+			color: #FFFFFF;
+			}
+
+
 /* Meet the Team Page */
 BODY 	{
 			background-color: WHITE;
@@ -165,40 +156,40 @@ BODY 	{
 	#navydk { background-color: #182160;
 			position: absolute;
 			}
-	#BIO1 {
-			font-family: 'HelveticaNowDisplay Regular';
+	.BIO1 {
+			font-family: 'helveticanowdisplay_regularRg', sans-serif;
 			color: rgb(0, 0, 102);
 			font-size: 18px;
 			text-justify: inter-word;
 			word-spacing: 2px;
 			line-height: 23px;
 			}
-	#BIO2 {
-			font-family: 'HelveticaNowDisplay Regular';
+	.BIO2 {
+			font-family: 'helveticanowdisplay_regularRg', sans-serif;
 			color: rgb(200, 200, 200);
 			font-size: 16px;
 			text-justify: inter-word;
 			word-spacing: 1px;
 			line-height: 22px;
 			}
-	#BIO3 {
-			font-family: 'HelveticaNowDisplay Regular';
+	.BIO3 {
+			font-family: 'helveticanowdisplay_regularRg', sans-serif;
 			color: rgb(0, 0, 102);
 			font-size: 19px;
 			text-justify: inter-word;
 			word-spacing: 2px;
 			line-height: 23px;
 			}
-	#BIO4 {
-			font-family: 'HelveticaNowDisplay Regular';
+	.BIO4 {
+			font-family: 'helveticanowdisplay_regularRg', sans-serif;
 			color: rgb(200, 200, 200);
 			font-size: 16px;
 			text-justify: inter-word;
 			word-spacing: 1px;
 			line-height: 22px;
 			}
-	#BIO5 {
-			font-family: 'HelveticaNowDisplay Regular';
+	.BIO5 {
+			font-family: 'helveticanowdisplay_regularRg', sans-sans-serif;
 			color: rgb(0, 0, 102);
 			font-size: 19px;
 			text-justify: inter-word;
